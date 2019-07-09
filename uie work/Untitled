@@ -1,0 +1,46 @@
+def missing_value(df,year,company):
+
+    #Get metric index table
+    METRIC_TABLE=df[['METRIC NAME']].drop_duplicates().sort_values(by='METRIC NAME').reset_index(drop=True)
+    METRIC_TABLE['METRIC ID']= pd.Categorical(METRIC_TABLE['METRIC NAME'].astype(str)).codes
+    #METRIC_TABLE.to_csv('Metric_index_tabel.csv',index=False)
+
+    #Get company index table
+    COMPANY_TABLE=df[['COMPANY NAME']].drop_duplicates().sort_values(by='COMPANY NAME').reset_index(drop=True)
+    COMPANY_TABLE['COMPANY ID'] = pd.Categorical(COMPANY_TABLE['COMPANY NAME'].astype(str)).codes
+    ###------pseudo email address
+    COMPANY_TABLE['COMPANY EMAIL']=COMPANY_TABLE['COMPANY NAME'].apply(lambda x:'{}@gmail.com'.format(x.lower().replace(' ','')))
+    #COMPANY_TABLE.to_csv('Company_index_tabel.csv',index=False)
+
+    #Get Survey Question Table
+    survey=df[['METRIC NAME']].drop_duplicates().reset_index(drop=True)
+    ###------pseudo survey questions
+    survey['SURVEY QUESTIONS']=survey['METRIC NAME'].apply(lambda x:'Do you have answer to {}? If yes, please specify; if no,please leave the question blank'.format(x))
+    #survey.to_csv('Survey_index_table.csv',index=False)
+
+    #Generate new dataframe
+    full=pd.DataFrame(list(product([company], METRIC_TABLE['METRIC NAME'].unique(),[year])),
+                      columns=['COMPANY NAME','METRIC NAME','YEAR'])
+
+    #merge with df for wanted info
+    full=full.merge(df.drop('ANSWER ID',1),on=['COMPANY NAME','METRIC NAME','YEAR'],how='left')
+
+    #return only observations with missing values
+    selected=full[ ((full.VALUE.isnull()) | (full.VALUE == 'Unclear') | (full.VALUE == 'Unknown')) & (full.YEAR==year)
+                 & (full['COMPANY NAME']==company)]
+    selected=selected[['COMPANY NAME', 'YEAR','METRIC NAME']].sort_values(by=['COMPANY NAME', 'YEAR'])
+
+    #Get survey questions for those missing value
+    selected=selected.merge(survey,on='METRIC NAME',how='left')
+
+    #def questionid
+    def questionid(row):
+        company_id=COMPANY_TABLE.loc[COMPANY_TABLE['COMPANY NAME']==row['COMPANY NAME'],'COMPANY ID'].values[0]
+        metric_id=METRIC_TABLE.loc[METRIC_TABLE['METRIC NAME']==row['METRIC NAME'],'METRIC ID'].values[0]
+        year_id=row.YEAR
+        return int(str(year_id)+format(company_id,'04')+format(metric_id,'04'))
+
+    #Generate questionid for each question
+    selected['QUESTIONID']=selected.apply(questionid,axis=1)
+
+    return selected
