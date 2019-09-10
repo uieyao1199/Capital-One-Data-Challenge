@@ -29,9 +29,12 @@ XYAO_Metadata.pdf
 ```
 full_table.csv
 ```
-* Additional file
+* Additional file: is an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
   
-  `XYAO_us-zip-code-latitude-and-longitude.csv` is an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
+```
+XYAO_us-zip-code-latitude-and-longitude.csv
+````
+
 
 
 ### Installing and Importing Libraries
