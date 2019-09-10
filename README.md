@@ -27,20 +27,21 @@ XYAO_Metadata.pdf
 ```
 
 * Additional data 
-```
-XYAO_us-zip-code-latitude-and-longitude.csv
-
-````
   - an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
+    ```
+    XYAO_us-zip-code-latitude-and-longitude.csv
+    ````
+  
 
-File should be opened in the following order:
-1. README.md (Source documentation )
-2. XYAO_code.ipynb (Data Analysis & Reporting)
-3. XYAO_functions.py (Class & Functions)
-4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
+* File should be opened in the following order:
+      1. README.md (Source documentation )
+      2. XYAO_code.ipynb (Data Analysis & Reporting)
+      3. XYAO_functions.py (Class & Functions)
+      4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
 
-### 1.1 Prerequisites
-
+### 1.1 Programming Tools
+* Anaconda Python Distribution: Jupyter Notebook
+* Python 3.6.5
 
 ### 1.2 Installing and Importing Libraries
 
