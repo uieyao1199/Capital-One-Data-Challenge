@@ -14,7 +14,7 @@ File should be opened in the following order:
 3. XYAO_functions.py (Class & Functions)
 4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
 
-### Prerequisites
+### *Prerequisites
 Assuming Airbnb and Zillow Datasets are in the same folder as other files
 
 Within the XYAO_work.zip file, should contains the following:
@@ -34,21 +34,23 @@ full_table.csv
 XYAO_us-zip-code-latitude-and-longitude.csv
 ````
 
-### Installing and Importing Libraries
+### *Installing and Importing Libraries
 
-Some packages might need to be installed, for example:
+* Some packages might need to be installed, for example:
 ```
 !pip install folium
 !pip install ipywidgets
 !pip install gmplot
 ```
-Most importanly, import XYAO_functions.py
-```from XYAO_functions import *```
+* Most importanly, import XYAO_functions.py:
+```
+from XYAO_functions import *
+```
 
 ## Assumptions 
 The following assumptions are made:
 
-### Airbnb Dataset
+### *Airbnb Dataset
 
 Explain what these tests test and why
 
@@ -56,7 +58,7 @@ Explain what these tests test and why
 Give an example
 ```
 
-### Zillow Dataset
+### *Zillow Dataset
 
 Explain what these tests test and why
 
