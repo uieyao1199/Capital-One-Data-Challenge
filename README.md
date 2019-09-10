@@ -18,7 +18,7 @@ Within the XYAO_work.zip file, should contains the following:
     Top 15 Zipcode Rating by price.png
     Top 15 Zipcode Rating by ROI.png
     ```
-* Coding Files
+* Code and documentation
 ```
 README.md
 XYAO_code.ipynb
@@ -34,10 +34,12 @@ XYAO_Metadata.pdf
   
 
 * File should be opened in the following order:
-      1. README.md (Source documentation )
-      2. XYAO_code.ipynb (Data Analysis & Reporting)
-      3. XYAO_functions.py (Class & Functions)
-      4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
+    ```
+    1. README.md (Source documentation)
+    2. XYAO_code.ipynb (Data Analysis & Reporting)
+    3. XYAO_functions.py (Class & Functions)
+    4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
+    ```
 
 ### 1.1 Programming Tools
 * Anaconda Python Distribution: Jupyter Notebook
