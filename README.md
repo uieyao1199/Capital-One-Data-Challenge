@@ -9,10 +9,10 @@ email: xiaojunyao1199@outlook.com
 
 ## Getting Started
 File should be opened in the following order:
-1. README.md
-2. XYAO_code.ipynb
-3. XYAO_functions.py
-4. XYAO_Metadata.pdf
+1. README.md (ReadMe Guideline)
+2. XYAO_code.ipynb (Data Analysis & Reporting)
+3. XYAO_functions.py (Class & Functions)
+4. XYAO_Metadata.pdf (Metadata for output table `full_table.csv`)
 
 ### Prerequisites
 Assuming Airbnb and Zillow Datasets are in the same folder as other files
@@ -29,13 +29,10 @@ XYAO_Metadata.pdf
 ```
 full_table.csv
 ```
-* Additional file: is an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
-  
+* Additional file: an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
 ```
 XYAO_us-zip-code-latitude-and-longitude.csv
 ````
-
-
 
 ### Installing and Importing Libraries
 
@@ -48,11 +45,10 @@ Some packages might need to be installed, for example:
 Most importanly, import XYAO_functions.py
 ```from XYAO_functions import *```
 
-## Running the tests
+## Assumptions 
+The following assumptions are made:
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
+### Airbnb Dataset
 
 Explain what these tests test and why
 
@@ -60,7 +56,7 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
+### Zillow Dataset
 
 Explain what these tests test and why
 
