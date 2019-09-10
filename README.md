@@ -8,7 +8,8 @@ Xiaojun Yao
 email: xiaojunyao1199@outlook.com
 
 ## Getting Started
-Within the Zip file, should contains the following:
+* Within the XYAO_work.zip file, should contains the following:
+
 ```
 XYAO_code.ipynb
 XYAO_functions.py
@@ -16,6 +17,7 @@ XYAO_Metadata.pdf
 README.md
 XYAO_us-zip-code-latitude-and-longitude.csv
 ```
+
 * ```XYAO_us-zip-code-latitude-and-longitude.csv``` is an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
 
 ### Prerequisites
