@@ -82,13 +82,26 @@ The following assumptions are made:
 * cost of properties before `2017-06` represent the past values and should not be considered.
 
 ## 3.0 Measurement Assumption and Calculation
-### Revenue 
+
+### Revenue (Net Operating Income)
 * 75% Occupancy rate: meaning that a property is occupied about 273 days every year (365 days/year)
+* Calculate Annual Net Operating Income (NOI)
+
+  1. it is assumed that price/night of stay is calculated by its revenue/night minus its operating           
+        expenses/night.
+
+  2. Daily price is a small and narrative representation of revenue of short-term rental. 
+    
+  3. it is also hard for us to calculate profit if we use price/night: Thus we use annual NOI 
+  
+  4. NOI = ['price'] x 365 days x 75%
+
 ### Cost
 * June 2017 costs are the most up-to-date records
 * June 2017 costs have the same validity as the Airbnb data (2019-07-08).
 * past cost values are not considered in this case.
-### Profit
+
+### Profit (Return On Investment)
 * Since these properties are for short-term rental, it is hard to measure profit in an easy way 
 * In this case, we consider to calcualte `Capitalization Rate` (which is the same as `Return on Investment`)
 * For an investment property to remain profitable as time goes by,its net operating income must increase either at the same rate as its market value, or at a greater rate. The capitalization rate is a strong measure of whether a property is becoming more or less profitable.
