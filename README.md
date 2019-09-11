@@ -13,13 +13,20 @@ email: xiaojunyao1199@outlook.com
 ## 1.0 Getting Started
 Within the XYAO_work.zip file, should contains the following:
 * Folders
-  - Data (Airbnb and Zillow data)
+  - Data 
+    ```
+    Zip_Zhvi_2bedroom.csv
+    XYAO_nyc_Zipcode_Latitude_and_Longitude.csv
+    ```
   - Output (data and graphs generated from code)
     ```
-    full_table.csv
-    Top 15 Zipcode Rating by Capitalization Rate.png
-    Top 15 Zipcode Rating by price.png
-    Top 15 Zipcode Rating by ROI.png
+    XYAO_profit.csv
+    XYAO_revenue.csv
+    XYAO_cost.csv
+    Boxplot of Three measures.png
+    Top 10 Zipcode Rating by Net Operating Income.png
+    Top 10 Zipcode Rating by price.png
+    Top 10 Zipcode Rating by Return On Investment.png
     ```
 * Code and documentation
     ```
@@ -29,13 +36,12 @@ Within the XYAO_work.zip file, should contains the following:
     XYAO_Metadata.pdf
     ```
 
-* Additional data 
-  - an additional dataset uploaded for geographic graphing purpose [(Public.opendatasoft.com, 2019)](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets). Detail referencing in `Reference` at the end.
+* Additional data (in the `Data` folder)
+  - an additional dataset generated from Airbnb dataset which contains Latitude and Longitude information for each zipcode
     ```
-    XYAO_us-zip-code-latitude-and-longitude.csv
+    XYAO_nyc_Zipcode_Latitude_and_Longitude.csv
     ````
-  
-
+ 
 * File should be opened in the following order:
     ```
     1. README.md (Source documentation)
@@ -79,6 +85,9 @@ The following assumptions are made:
 ### Revenue 
 * 75% Occupancy rate: meaning that a property is occupied about 273 days every year (365 days/year)
 ### Cost
+* June 2017 costs are the most up-to-date records
+* June 2017 costs have the same validity as the Airbnb data (2019-07-08).
+* past cost values are not considered in this case.
 ### Profit
 * Since these properties are for short-term rental, it is hard to measure profit in an easy way 
 * In this case, we consider to calcualte `Capitalization Rate` (which is the same as `Return on Investment`)
@@ -97,6 +106,3 @@ The following assumptions are made:
 ## 5.0 Recommendations and Future Research
 Recommendations and Future Research are included at the end of `XYAO_code.ipynb`. 
 
-## Reference
-
-* Public.opendatasoft.com. (2019). US Zip Code Latitude and Longitude. [online] Available at: https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?refine.state=NY&location=7,42.79,-75.84997&basemap=jawg.streets [Accessed 10 Sep. 2019].
