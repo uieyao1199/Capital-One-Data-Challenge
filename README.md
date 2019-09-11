@@ -1,4 +1,4 @@
-# Capital One Data Challenge
+# AirBnB & Zillow Data Challenge
 
 This project aims at AirBnB & Zillow Data Challenge
 
@@ -62,6 +62,7 @@ from XYAO_functions import *
 The following assumptions are made:
 
 ### 2.1 Airbnb Dataset
+* properties `price` has considered operating cost: meaning `price` per night of stay is calculated by its revenue/night minus its operating expenses/night.
 * `neighbourhood_group_cleansed` and `neighbourhood_cleansed` are most correct location detail for each zipcode.
 * all listed properties in this table are properties in New York City (recognized based on `city` and `state`)
 * properties with missing `zipcode` do not have major effect on final result
@@ -70,6 +71,17 @@ The following assumptions are made:
 ### 2.2 Zillow Dataset
 * cost of properties in `2017-06` (June 2017) is the most up-to-date cost value and still valid for today
 * cost of properties before `2017-06` represent the past values and should not be considered.
+
+## 3.0 Measurement Assumption and Calculation
+### Revenue 
+* 75% Occupancy rate: meaning that a property is occupied about 273 days every year (365 days/year)
+### Cost
+### Profit
+* Since these properties are for short-term rental, it is hard to measure profit in an easy way 
+* In this case, we consider to calcualte `Capitalization Rate` (which is the same as `Return on Investment`)
+* For an investment property to remain profitable as time goes by,its net operating income must increase either at the same rate as its market value, or at a greater rate. The capitalization rate is a strong measure of whether a property is becoming more or less profitable.
+* For example, if ROI=15.5%, a property is rented a year (75% occupancy rate), the company would stand to earn 12.5% of the property's value as profit each year, assuming that NOI and market value remain constant.
+* ROI = NOI / investment cost
 
 ## Reference
 
