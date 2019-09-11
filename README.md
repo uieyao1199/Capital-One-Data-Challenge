@@ -1,6 +1,9 @@
 # AirBnB & Zillow Data Challenge
 
-This project aims at AirBnB & Zillow Data Challenge
+This project aims at finding the most profitable zipcode location in NYC area. 
+Recommendations will be given regarding which zipcodes are most profitable for investing for short-term rental. 
+Additionally, suggestions for further research will be provided at the end. 
+Data is provided by AirBnB (revenue data) and Zillow (cost data).
 
 ## Authors
 Xiaojun Yao
@@ -82,6 +85,17 @@ The following assumptions are made:
 * For an investment property to remain profitable as time goes by,its net operating income must increase either at the same rate as its market value, or at a greater rate. The capitalization rate is a strong measure of whether a property is becoming more or less profitable.
 * For example, if ROI=15.5%, a property is rented a year (75% occupancy rate), the company would stand to earn 12.5% of the property's value as profit each year, assuming that NOI and market value remain constant.
 * ROI = NOI / investment cost
+
+## 4.0 Insights and Markdown 
+* Each step of data analysis is ended with an `Insights` part. 
+* `Insights` include:
+    * key findings from data or graphs
+    * why and how are assumptions maded
+    * explanation of calculations
+    * detailed layout of data analysis steps
+
+## 5.0 Recommendations and Future Research
+Recommendations and Future Research are included at the end of `XYAO_code.ipynb`. 
 
 ## Reference
 
