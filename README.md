@@ -23,10 +23,14 @@ Within the XYAO_work.zip file, should contains the following:
     XYAO_profit.csv
     XYAO_revenue.csv
     XYAO_cost.csv
+    
+    XYAO_nyc_Zipcode_Latitude_and_Longitude.csv
+    
     Boxplot of Three measures.png
     Top 10 Zipcode Rating by Net Operating Income.png
     Top 10 Zipcode Rating by price.png
     Top 10 Zipcode Rating by Return On Investment.png
+    
     ```
 * Code and documentation
     ```
