@@ -56,8 +56,14 @@ Within the XYAO_work.zip file, should contains the following:
     XYAO_code.ipynb
     XYAO_functions.py
     XYAO_Metadata.pdf
+    README_backup.pdf
     ```
-
+* ReadMe Backup
+  - an additional pdf format of README just in case README.md failed to open
+    ```
+    README_backup.pdf
+    ```
+  
 * Additional data (in the `Data` folder)
   - an additional dataset generated from Airbnb dataset which contains Latitude and Longitude information for each zipcode
     ```
