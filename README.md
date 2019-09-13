@@ -1,33 +1,20 @@
 # AirBnB & Zillow Data Challenge
 
+This project aims at finding the most profitable zipcode location in NYC area. 
+Recommendations will be given regarding which zipcodes are most profitable for investing for short-term rental. 
+Additionally, suggestions for further research will be provided at the end. 
+Data is provided by AirBnB (revenue data) and Zillow (cost data).
 
 
+This project aims at finding the most profitable zipcode location in NYC area. 
+Recommendations will be given regarding which zipcodes are most profitable for investing for short-term rental. 
+Additionally, suggestions for further research will be provided at the end. 
+Data is provided by AirBnB (revenue data) and Zillow (cost data).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This project aims at finding the most profitable zipcode location in NYC area. 
+Recommendations will be given regarding which zipcodes are most profitable for investing for short-term rental. 
+Additionally, suggestions for further research will be provided at the end. 
+Data is provided by AirBnB (revenue data) and Zillow (cost data).
 
 # AirBnB & Zillow Data Challenge
 
